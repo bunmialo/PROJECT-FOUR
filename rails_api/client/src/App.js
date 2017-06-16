@@ -1,53 +1,58 @@
 import React, { Component } from 'react';
+import Movielist from './components/Movielist';
 import './App.css';
 
+
 class App extends Component {
-constructor() {
-  super();
-  this.state = {
-    apiData: null,
-    title: null,
-    overview: null,
-    release_date: null,
-    poster_path: null,
-    genre_id: null,
-    apiDataLoaded: false,
-  };
-}
+  constructor(props){
+    super(props);
+    this.state = {
+      apiData: null,
+      title: null,
+      overview: null,
+      release_date: null,
+      poster_path: null,
+      genre_id: null,
+      apiDataLoaded: false,
+    }
+    this.handleViewClick = this.handleViewClick.bind(this);
+    this.handleSearchClick = this.handleSearchClick.bind(this);
+  }
 
-componentDidMount() {
-  fetch('/movies').then(res => res.json()).then((jsonRes) => {
-    this.setState({
-      apiData: jsonRes.movies_data,
-      title: jsonRes.results[0].title,
-      overview: jsonRes.overview,
-      release_date: jsonRes.release_date,
-      poster_path: jsonRes.results[0].poster_path,
-      genre_id: jsonRes.results[0].genre_ids,
-      apiDataLoaded: true,
+  componentDidMount() {
+    
+  }
+
+  handleViewClick() {
+    console.log('apiData');
+  }
+
+  handleSearchClick () {
+    fetch('/movies').then(res => res.json()).then((jsonRes) => {
+      console.log(jsonRes)
+      this.setState({
+        apiData: jsonRes.results,
+        apiDataLoaded: true,
+      });
     });
-  });
-}
+  }
 
-showMovies() {
-  return this.state.apiData.map((movie) => {
-    return (
-      <div className='movie' key={movie.title}>
-        <p>{movie.overview}</p>
-        <span className='release_date'>{movie.release_date}</span>
-        <span className='poster_path'>{movie.poster_path}</span>
-        <span className='genre_ids'>{movie.genre_ids}</span>
-      </div>
-    );
-  })
-}
 
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <h2>Welcome to BoomList: The official movie watchlist app of the NBA</h2>
+        <h1>Welcome to bOOmList!</h1>
+        <h2>Your one-stop app for popular movies</h2>
+        <div className='buttons'>
+          <button className='view' onClick={this.handleViewClick}>
+            View bOOmList
+          </button>
+           <button className='search' onClick={this.handleSearchClick}>
+            Search
+          </button>
         </div>
+        
+      {(this.state.apiDataLoaded) ? <Movielist movies={this.state.apiData} imageSrc={this.state.poster_path} /> : ""}
       </div>
     );
   }
