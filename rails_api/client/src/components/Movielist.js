@@ -10,9 +10,12 @@ class Movielist extends Component {
     } else {
       return this.props.movies.map((movie) => {
           return (
-            <ul>
-              <Movie key={movie.id} movie={movie} />
-            </ul>
+            <div>
+              <ul>
+                <Movie key={movie.id} movie={movie} />
+              </ul>
+              <button onClick={this.props.addMovie} className='addMovie'>Add This Movie</button>
+            </div>
           );
       });
 

@@ -14,10 +14,11 @@ class App extends Component {
       poster_path: null,
       genre_id: null,
       apiDataLoaded: false,
-      addMovieValue: '',
+      addMovie: '',
     }
     this.handleViewClick = this.handleViewClick.bind(this);
     this.handleSearchClick = this.handleSearchClick.bind(this);
+    this.addMovie = this.addMovie.bind(this);
   }
 
   componentDidMount() {
@@ -25,13 +26,14 @@ class App extends Component {
   }
 
 
-  handleViewClick() {
+  handleSearchClick () {
     console.log('apiData');
   }
 
-  handleSearchClick () {
+  
+  handleViewClick() {
     fetch('/movies').then(res => res.json()).then((jsonRes) => {
-      console.log(jsonRes)
+      // console.log(jsonRes)
       this.setState({
         apiData: jsonRes.results,
         apiDataLoaded: true,
@@ -39,6 +41,27 @@ class App extends Component {
     });
   }
 
+addMovie(event) {
+  // console.log(this.state.id)
+  fetch(`/movies/`,{
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      title: this.state.title,
+      overview: this.state.overview,
+      release_date: this.state.release_date,
+      poster_path: this.state.poster_path,
+    })
+  })
+  .then((res) => {
+    return res.json();
+  })
+  .then((resJson) => {
+    this.setState({
+      id: resJson.results.id
+    })
+  })
+}
 
   render() {
     return (
@@ -54,7 +77,7 @@ class App extends Component {
           </button>
         </div>
         
-      {(this.state.apiDataLoaded) ? <Movielist movies={this.state.apiData} imageSrc={this.state.poster_path} /> : ""}
+      {(this.state.apiDataLoaded) ? <Movielist movies={this.state.apiData} addMovie={this.addMovie} imageSrc={this.state.poster_path} /> : ""}
       </div>
     );
   }
