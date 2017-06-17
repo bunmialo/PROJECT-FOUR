@@ -14,6 +14,7 @@ class App extends Component {
       poster_path: null,
       genre_id: null,
       apiDataLoaded: false,
+      addMovieValue: '',
     }
     this.handleViewClick = this.handleViewClick.bind(this);
     this.handleSearchClick = this.handleSearchClick.bind(this);
@@ -22,6 +23,7 @@ class App extends Component {
   componentDidMount() {
     
   }
+
 
   handleViewClick() {
     console.log('apiData');

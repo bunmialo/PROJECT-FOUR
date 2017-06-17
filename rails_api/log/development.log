@@ -4995,3 +4995,297 @@ Processing by MoviesController#index as */*
 Completed 200 OK in 113ms (Views: 7.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 14:11:50 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 104ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 14:11:56 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 89ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 14:33:05 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 101ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 14:33:57 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 117ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 15:10:57 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 109ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 15:35:07 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 91ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 15:42:31 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 102ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-06-16 15:49:48 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/bunmi/.rvm/gems/ruby-2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bunmi/.rvm/gems/ruby-2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 34ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-06-16 15:50:03 -0400
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/bunmi/.rvm/gems/ruby-2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/bunmi/.rvm/gems/ruby-2.4.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 26ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 15:50:24 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 145ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 15:53:32 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 99ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:16:17 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:16:18 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:16:19 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:16:20 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:16:21 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:16:22 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:16:49 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:17:10 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:17:11 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:19:48 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:19:49 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:19:50 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:20:24 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:22:17 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:22:18 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:22:36 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:22:37 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:22:37 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:22:58 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:23:21 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:23:22 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:23:43 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+  #snippet for brevity
+                      ^):
+  
+app/controllers/movies_controller.rb:52: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:26:12 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 135ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:26:27 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 101ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 17:39:44 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 99ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 21:11:54 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:62: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/movies_controller.rb:62: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 21:11:59 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:62: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/movies_controller.rb:62: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 21:12:00 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:62: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/movies_controller.rb:62: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 21:16:25 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:62: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/movies_controller.rb:62: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 21:16:27 -0400
+  
+SyntaxError (/Users/bunmi/GA/projects/unit04/PROJECT-FOUR/rails_api/app/controllers/movies_controller.rb:62: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/movies_controller.rb:62: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 21:22:36 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 182ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 21:57:41 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 147ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 21:57:45 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 136ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 22:05:29 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 176ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 22:05:42 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 140ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 22:05:47 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 160ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 22:05:57 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 148ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-16 22:07:17 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 144ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
