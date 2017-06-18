@@ -5658,3 +5658,328 @@ Processing by MoviesController#index as */*
 Completed 200 OK in 95ms (Views: 5.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/movies" for 127.0.0.1 at 2017-06-18 15:50:35 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 98ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-18 15:54:19 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 98ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-18 15:54:20 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 99ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-18 15:54:29 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 102ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-18 15:54:29 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 95ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-18 15:59:57 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 102ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-18 16:00:04 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 129ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-18 16:00:47 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 594ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#index as */*
+Completed 200 OK in 93ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/297762" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"297762"}
+Started GET "/movies/321612" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"321612"}
+Started GET "/movies/263115" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#show as */*
+Started GET "/movies/282035" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Started GET "/movies/166426" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  Parameters: {"id"=>"263115"}
+Processing by MoviesController#show as */*
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"282035"}
+  Parameters: {"id"=>"166426"}
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 321612], ["LIMIT", 1]]
+Completed 404 Not Found in 142ms (Views: 0.3ms | ActiveRecord: 68.7ms)
+
+
+  [1m[36mMovie Load (8.6ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 297762], ["LIMIT", 1]]
+Completed 404 Not Found in 145ms (Views: 0.1ms | ActiveRecord: 58.6ms)
+
+
+  [1m[36mMovie Load (1.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 282035], ["LIMIT", 1]]
+Started GET "/movies/324552" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Completed 404 Not Found in 133ms (Views: 0.1ms | ActiveRecord: 71.3ms)
+
+
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"324552"}
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 324552], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mMovie Load (10.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 263115], ["LIMIT", 1]]
+Completed 404 Not Found in 138ms (Views: 0.2ms | ActiveRecord: 76.6ms)
+
+
+Started GET "/movies/395992" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  [1m[36mMovie Load (14.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 166426], ["LIMIT", 1]]
+Processing by MoviesController#show as */*
+Started GET "/movies/22" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Completed 404 Not Found in 143ms (Views: 0.2ms | ActiveRecord: 78.0ms)
+
+
+  Parameters: {"id"=>"395992"}
+Started GET "/movies/245891" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#show as */*
+Started GET "/movies/221356" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#show as */*
+  [1m[36mMovie Load (0.9ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 395992], ["LIMIT", 1]]
+  Parameters: {"id"=>"22"}
+Processing by MoviesController#show as */*
+Started GET "/movies/283995" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  Parameters: {"id"=>"245891"}
+Completed 404 Not Found in 4ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+  Parameters: {"id"=>"221356"}
+Processing by MoviesController#show as */*
+  [1m[36mMovie Load (0.8ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mMovie Load (1.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 245891], ["LIMIT", 1]]
+  Parameters: {"id"=>"283995"}
+Completed 404 Not Found in 4ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies/118340" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Completed 404 Not Found in 8ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+
+
+  [1m[36mMovie Load (6.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 221356], ["LIMIT", 1]]
+Processing by MoviesController#show as */*
+  [1m[36mMovie Load (0.9ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 283995], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (Views: 0.1ms | ActiveRecord: 6.3ms)
+
+
+  Parameters: {"id"=>"118340"}
+Completed 404 Not Found in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/movies/157336" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"157336"}
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 118340], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mMovie Load (0.8ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 157336], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/movies/335797" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"335797"}
+Started GET "/movies/283366" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 335797], ["LIMIT", 1]]
+Processing by MoviesController#show as */*
+Started GET "/movies/335988" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Started GET "/movies/337339" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Completed 404 Not Found in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies/324849" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  Parameters: {"id"=>"283366"}
+Processing by MoviesController#show as */*
+Processing by MoviesController#show as */*
+Processing by MoviesController#show as */*
+  Parameters: {"id"=>"335988"}
+  Parameters: {"id"=>"337339"}
+  Parameters: {"id"=>"324849"}
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 283366], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 337339], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.9ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 335988], ["LIMIT", 1]]
+Started GET "/movies/126889" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Completed 404 Not Found in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Completed 404 Not Found in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 324849], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Processing by MoviesController#show as */*
+Completed 404 Not Found in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies/135397" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  Parameters: {"id"=>"126889"}
+Started DELETE "/movies/321612" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#show as */*
+Started DELETE "/movies/297762" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#destroy as */*
+  Parameters: {"id"=>"135397"}
+Processing by MoviesController#destroy as */*
+  Parameters: {"id"=>"321612"}
+  [1m[36mMovie Load (2.9ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 126889], ["LIMIT", 1]]
+  Parameters: {"id"=>"297762"}
+Started DELETE "/movies/282035" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 135397], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (Views: 0.1ms | ActiveRecord: 2.9ms)
+
+
+Processing by MoviesController#destroy as */*
+  [1m[36mMovie Load (0.9ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 321612], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 297762], ["LIMIT", 1]]
+  Parameters: {"id"=>"282035"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/movies/324552" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#destroy as */*
+  Parameters: {"id"=>"324552"}
+  [1m[36mMovie Load (1.7ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 282035], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/movies/263115" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#destroy as */*
+  [1m[36mMovie Load (1.7ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 324552], ["LIMIT", 1]]
+Started DELETE "/movies/166426" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  Parameters: {"id"=>"263115"}
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Processing by MoviesController#destroy as */*
+Started DELETE "/movies/22" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Started DELETE "/movies/395992" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  [1m[36mMovie Load (1.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 263115], ["LIMIT", 1]]
+  Parameters: {"id"=>"166426"}
+Processing by MoviesController#destroy as */*
+Processing by MoviesController#destroy as */*
+  Parameters: {"id"=>"395992"}
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+  Parameters: {"id"=>"22"}
+Started DELETE "/movies/245891" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 166426], ["LIMIT", 1]]
+Processing by MoviesController#destroy as */*
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mMovie Load (2.6ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 395992], ["LIMIT", 1]]
+  Parameters: {"id"=>"245891"}
+Started DELETE "/movies/221356" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  [1m[36mMovie Load (2.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/movies/283995" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#destroy as */*
+Completed 200 OK in 10ms (Views: 2.9ms | ActiveRecord: 2.1ms)
+
+
+  [1m[36mMovie Load (4.6ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 245891], ["LIMIT", 1]]
+Processing by MoviesController#destroy as */*
+  Parameters: {"id"=>"283995"}
+Completed 200 OK in 12ms (Views: 2.3ms | ActiveRecord: 4.6ms)
+
+
+Started DELETE "/movies/118340" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  Parameters: {"id"=>"221356"}
+Processing by MoviesController#destroy as */*
+Started DELETE "/movies/335797" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Started DELETE "/movies/157336" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  Parameters: {"id"=>"118340"}
+  [1m[36mMovie Load (2.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 283995], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 221356], ["LIMIT", 1]]
+Processing by MoviesController#destroy as */*
+Processing by MoviesController#destroy as */*
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 118340], ["LIMIT", 1]]
+  Parameters: {"id"=>"335797"}
+  Parameters: {"id"=>"157336"}
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/movies/283366" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#destroy as */*
+  Parameters: {"id"=>"283366"}
+  [1m[36mMovie Load (2.6ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 157336], ["LIMIT", 1]]
+  [1m[36mMovie Load (4.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 335797], ["LIMIT", 1]]
+Started DELETE "/movies/335988" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 4.3ms)
+
+
+  [1m[36mMovie Load (2.6ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 283366], ["LIMIT", 1]]
+Processing by MoviesController#destroy as */*
+Started DELETE "/movies/337339" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+  Parameters: {"id"=>"335988"}
+Started DELETE "/movies/324849" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+Processing by MoviesController#destroy as */*
+Processing by MoviesController#destroy as */*
+Started DELETE "/movies/135397" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  Parameters: {"id"=>"337339"}
+Started DELETE "/movies/126889" for 127.0.0.1 at 2017-06-18 16:18:22 -0400
+  [1m[36mMovie Load (2.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 335988], ["LIMIT", 1]]
+  Parameters: {"id"=>"324849"}
+Processing by MoviesController#destroy as */*
+Processing by MoviesController#destroy as */*
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.2ms)
+
+
+  [1m[36mMovie Load (1.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 337339], ["LIMIT", 1]]
+  Parameters: {"id"=>"135397"}
+  Parameters: {"id"=>"126889"}
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+
+
+  [1m[36mMovie Load (1.5ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 324849], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.7ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 135397], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+  [1m[36mMovie Load (1.5ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = $1 LIMIT $2[0m  [["id", 126889], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+

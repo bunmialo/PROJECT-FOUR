@@ -167,12 +167,8 @@ class App extends Component {
         <h1>Welcome to bOOmList!</h1>
         <h2>Your one-stop app for popular movies</h2>
         <div className='buttons'>
-          <button className='view' onClick={this.handleViewClick}>
-            View bOOmList
-          </button>
-           <button className='search' onClick={this.handleSearchClick}>
-            Search
-          </button>
+          <button className='view' onClick={this.handleViewClick}>View bOOmList</button>
+          <button className='search' onClick={this.handleSearchClick}>Search</button>
         </div>
       {/* {(this.state.apiDataLoaded) ? <Movielist 
         movies={this.state.apiData} 

@@ -11,6 +11,8 @@ class Movie extends Component {
           <li>Release date: {this.props.movie.release_date}</li>
         </ul>
         <img className='image' src={"https://image.tmdb.org/t/p/w500" + this.props.movie.poster_path} />
+        <button className='edit_movie' onClick={this.props.showEditForm(this.props.movie.id)}>Edit Movie</button>
+        <button className='delete_movie' onClick={this.props.deleteMovie(this.props.movie.id)}>Delete Movie</button>
       </div>
     );
   }
