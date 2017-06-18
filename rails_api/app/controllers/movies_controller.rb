@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
   
   def index
-    @movies = Movie.get_movies
+    @movies = Movie.all
     render json: @movies
   end
 
@@ -29,8 +29,11 @@ class MoviesController < ApplicationController
 
   def update
     begin
+      puts 'in update'
       @movie = Movie.find(params[:id])
+      puts 'found movie'
       @movie.update(movie_params)
+      puts 'updated movie'
       @all_movies = Movie.order(:id)
       render json: @all_movies
     rescue Exception
@@ -40,8 +43,8 @@ class MoviesController < ApplicationController
 
   def destroy
     begin
-      @movies = Movie.find(params[:id])
-      @movies.destroy
+      @movie = Movie.find(params[:id])
+      @movie.destroy
       @all_movies = Movie.order(:id)
       render json: @all_movies
     rescue ActiveRecord::RecordNotFound

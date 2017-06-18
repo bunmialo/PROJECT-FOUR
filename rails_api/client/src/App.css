@@ -68,3 +68,18 @@ p {
   font-family: fantasy;
   color: #EEEEEE;
 }
+
+.e_d_buttons {
+  padding: 20px;
+  margin: 10px;
+
+}
+
+.edit_movie, .delete_movie {
+  background: tan;
+  height: 20px;
+}
+
+.delete_movie {
+  margin-left: 100px;
+}

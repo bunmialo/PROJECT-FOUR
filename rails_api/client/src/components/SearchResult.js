@@ -58,17 +58,14 @@ class SearchResult extends Component {
 }
 
  renderMovies() {
-    // movies happens to be null?? why
-    if(this.props.movies == null) {
+    if(this.props.apiData == null) {
        <div>Loading...</div>
     } else {
-      return this.props.movies.map((movie) => {
+      return this.props.apiData.map((movie) => {
           return (
             <div>
-              <ul>
-                <Movie key={movie.id} movie={movie} />
-              </ul>
-              <button onClick={this.props.addMovie} className='addMovie'>Add This Movie</button>
+               <button onClick={this.addMovie} className='addMovie'>Add This Movie</button>
+       
             </div>
           );
       });
@@ -80,13 +77,13 @@ class SearchResult extends Component {
   render() {
     return (
       <div className='search-list'>
-        <h3>Title: {this.props.movie.title}</h3>
-        <p>Overview: {this.props.movie.overview}</p>
-        <ul className="Movie">
-          <li>Genre: {this.props.movie.genre_id}</li>
-          <li>Release date: {this.props.movie.release_date}</li>
+        <h3>Title: {this.props.apiData.title}</h3>
+        <p>Overview: {this.props.apiData.overview}</p>
+        <ul className="movie_search">
+          <li>Genre: {this.props.apiData.genre_id}</li>
+          <li>Release date: {this.props.apiData.release_date}</li>
         </ul>
-        <img className='image' src={"https://image.tmdb.org/t/p/w500" + this.props.movie.poster_path} />
+        <img className='image' src={"https://image.tmdb.org/t/p/w500" + this.props.apiData.poster_path} />
       </div>
     );
   }

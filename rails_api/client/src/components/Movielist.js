@@ -38,31 +38,42 @@ class Movielist extends Component {
                     value={this.props.poster_pathValue}
                     onChange={this.props.handlePoster_pathInputChange}
                   />
-                  <input type='submit' value='Edit mmovie!' />
+                  <input type='submit' value='Edit movie!' />
                 </form>
               </div>
             );
+          } else {
+            return ( 
+              <Movie 
+                  key={movie.id} 
+                  movie={movie} 
+                  // setFeature={this.props.setFeature}
+                  // featuredMovieId={this.props.featuredMovieId}
+                  deleteMovie={this.props.deleteMovie}
+                  showEditForm={this.props.showEditForm}
+                  editMovie={this.props.editMovie}
+                />
+            )
           }
         })}
-
       </div>
     );
   }
 
   renderMovies() {
     // movies happens to be null?? why
-    if(this.props.movies == null) {
+    if(!this.props.movies) {
        <div>Loading...</div>
     } else {
       return this.props.movies.map((movie) => {
           return (
-            <div>
+            <div key={movie.id}>
               <ul>
                 <Movie 
                   key={movie.id} 
                   movie={movie} 
-                  setFeature={this.props.setFeature}
-                  featuredMovieId={this.props.featuredMovieId}
+                  // setFeature={this.props.setFeature}
+                  // featuredMovieId={this.props.featuredMovieId}
                   deleteMovie={this.props.deleteMovie}
                   showEditForm={this.props.showEditForm}
                 />
@@ -76,7 +87,7 @@ class Movielist extends Component {
 render() {
   return (
     <div>
-      {this.renderMovies()}
+      {/*{this.renderMovies()}*/}
       {this.renderMoviesForm()}
     </div>
     );
