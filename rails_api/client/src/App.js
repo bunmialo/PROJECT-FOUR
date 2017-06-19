@@ -10,17 +10,12 @@ class App extends Component {
     this.state = {
       dbLoaded: false,
       dbData: null,
+      renderState: '',
 
 
 
       apiData: null,
-      title: null,
-      overview: null,
-      release_date: null,
-      poster_path: null,
-      genre_id: null,
       apiDataLoaded: false,
-      currentlyEditing: null,
       currentlyAdding: false,
       addMovie: '',
 
@@ -31,16 +26,9 @@ class App extends Component {
       release_dateValue: '',
       poster_pathValue: '',
     };
-    this.setFeature = this.setFeature.bind(this);
-    this.showEditForm = this.showEditForm.bind(this); 
     this.editMovie = this.editMovie.bind(this);
     this.deleteMovie = this.deleteMovie.bind(this);
-    // this.handleTitleInputChange = this.handleTitleInputChange.bind(this);
-    // this.handleOverviewInputChange = this.handleOverviewInputChange.bind(this);
-    // this.handleRelease_dateInputChange = this.handleRelease_dateInputChange.bind(this);
-    // this.handlePoster_pathInputChange = this.handlePoster_pathInputChange.bind(this);
     this.handleViewClick = this.handleViewClick.bind(this);
-
     this.handleSearchClick = this.handleSearchClick.bind(this);
     // this.addMovie = this.addMovie.bind(this);
   }
@@ -50,6 +38,7 @@ class App extends Component {
   }
 
   handleSearchClick(event) {
+    this.setState({renderState: 'api'});
     console.log('in handle search');
     fetch('https://api.themoviedb.org/3/movie/popular?api_key=b252c8a5b57d94f064c7af84cd5d1bff&language=en-US&page=1')
     .then((res) => {
@@ -57,39 +46,18 @@ class App extends Component {
       return res.json()
     })
     .then((jsonRes) => {
-      console.log(jsonRes.results);
+      console.log('before set state', jsonRes.results);
       this.setState({
         apiData: jsonRes.results,
         apiDataLoaded: true,
-      });
+      },
+      //  () => {console.log('after set state: ', this.state.apiData)}   <---- callback to run ONLY AFTER state is set
+       );
     });
   }
 
-
-
-  /* features movie */
-  setFeature(id) {
-    // this.setState({
-    //   featuredMovieId: id,
-    // });
-  }
-
-  /* shows/hides edit form for individual movie */
-  showEditForm(id) {
-    console.log('edit', id)
-    fetch(`/movies/${id}`).then(res => res.json()).then((jsonRes) => {
-      this.setState({
-        currentlyEditing: id,
-        titleValue: jsonRes.title,
-        overviewValue: jsonRes.overview,
-        release_dateValue: jsonRes.release_date,
-        poster_pathValue: jsonRes.poster_path,
-        currentlyAdding: false,
-      });
-    }).catch(err => console.log(err));
-  }
-
   handleViewClick() {
+    this.setState({renderState: 'db'})
     fetch('/movies').then(res => res.json()).then((jsonRes) => {
       console.log(jsonRes);
       this.setState({
@@ -99,6 +67,34 @@ class App extends Component {
     });
   }
 
+  addMovie(event, movie) {
+    event.preventDefault();
+    console.log(movie)
+  fetch('/movies', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      movies: {
+        title: movie.title,
+        overview: movie.overview,
+        release_date: movie.release_date,
+        rating: 1,
+        poster_path: movie.poster_path,
+        genre_id: 1,
+      }
+    }),
+  })
+  .then((res) => {
+    return res.json();
+  })
+  .then((resJson) => {
+    console.log(resJson);
+    // this.setState({
+    //   id: resJson.results[0].id
+    // })
+  })
+}
+
   editMovie(event, id) {
     event.preventDefault();
     fetch(`/movies/${id}`, {
@@ -107,7 +103,7 @@ class App extends Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        movie: {
+        movies: {
           title: event.target.title.value,
           overview: event.target.overview.value,
           release_date: event.target.release_date.value,
@@ -145,38 +141,44 @@ class App extends Component {
   }
 
   renderMovieList() {
-  if (this.state.dbLoaded) {
-    return (
-      <Movielist
-
-        movies={this.state.dbData} 
-        // addMovie={this.addMovie} 
-        // imageSrc={this.state.poster_path}
-
-        // apiData={this.state.apiData}
-        // setFeature={this.setFeature}
-        // featuredMovieId={this.state.featuredMovieId}
-        deleteMovie={this.deleteMovie}
-        // currentlyEditing={this.state.currentlyEditing}
-        showEditForm={this.showEditForm}
-        editMovie={this.editMovie}
-        // handleTitleInputChange={this.handleTitleInputChange}
-        // handleOverviewInputChange={this.handleOverviewInputChange}
-        // handleRelease_dateInputChange={this.handleRelease_dateInputChange}
-        // handlePoster_pathInputChange={this.handlePoster_pathInputChange}
-        // titleValue={this.state.titleValue}
-        // overviewValue={this.state.overviewValue}
-        // release_dateValue={this.state.release_dateValue}
-        // poster_pathValue={this.state.poster_pathValue}
-        />
-    );
+  if (this.state.renderState === 'db') {
+    if (this.state.dbLoaded) {
+      return (
+        <Movielist
+          renderState={this.state.renderState}
+          movies={this.state.dbData} 
+          // addMovie={this.addMovie} 
+          // apiData={this.state.apiData}
+          deleteMovie={this.deleteMovie}
+          showEditForm={this.showEditForm}
+          editMovie={this.editMovie}
+          />
+      );
+    } else {
+      return (
+        <p>Loading</p>
+      )
+    }
+  } else if (this.state.renderState === 'api') {
+    if (this.state.apiDataLoaded) {
+     return (
+        <Movielist
+          renderState={this.state.renderState}
+          movies={this.state.apiData} 
+          addMovie={this.addMovie} 
+          deleteMovie={this.deleteMovie}
+          />
+      ); 
+    } else {
+      return (
+        <p>Loading</p>
+      )    
+    }
   } else {
     return (
-      <p>Loading</p>
+      <p>click a button!</p>
     )
   }
-
-  // return <p>Loading</p>;
 }
 
   render() {

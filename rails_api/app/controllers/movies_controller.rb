@@ -18,12 +18,13 @@ class MoviesController < ApplicationController
 
   def create
     begin
-      @movie = Movie.new(movie_params)
+      @movie = Movie.new(movies_params)
       @movie.save
       @all_movies = Movie.order(:id)
       render json: @all_movies
-    rescue Exception
-      render json: { message: "bro, there was some error" }, status: 500
+    rescue => error
+      puts error
+      # render json: { message: "bro, there was some error" }, status: 500
     end
   end
 
@@ -32,12 +33,13 @@ class MoviesController < ApplicationController
       puts 'in update'
       @movie = Movie.find(params[:id])
       puts 'found movie'
-      @movie.update(movie_params)
+      @movie.update(movies_params)
       puts 'updated movie'
       @all_movies = Movie.order(:id)
       render json: @all_movies
-    rescue Exception
-      render json: { message: "bro, there was an error" }
+    rescue => error
+      puts error
+      # render json: { message: "bro, there was an error" }
     end
   end
 
