@@ -13,8 +13,6 @@ class SearchResult extends Component {
       genre_id: null,
       apiDataLoaded: false,
     }
-    this.handleSearch = this.handleSearch.bind(this);
-    this.addMovie = this.addMovie.bind(this);
   }
 
   handleSearch(event) {
@@ -34,28 +32,7 @@ class SearchResult extends Component {
     });
   }
 
-  addMovie(event) {
-    event.preventDefault();
-  // console.log(this.state.id)
-  fetch('https://api.themoviedb.org/3/movie/popular?api_key=b252c8a5b57d94f064c7af84cd5d1bff&language=en-US&page=1', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({
-      title: event.target.title.value,
-      overview: event.target.overview.value,
-      release_date: event.target.release_date.value,
-      poster_path: event.target.poster_path.value
-    }),
-  })
-  .then((res) => {
-    return res.json();
-  })
-  .then((resJson) => {
-    this.setState({
-      id: resJson.results[0].id
-    })
-  })
-}
+
 
  renderMovies() {
     if(this.props.apiData == null) {
