@@ -79,13 +79,27 @@ p {
 
 }
 
-.edit_movie, .delete_movie, .add_movie {
+.edit_movie, .edit_it, .delete_movie, .add_movie {
   background: tan;
   height: 20px;
 }
 
 .delete_movie {
   margin-left: 10px;
+}
+
+.edit_it {
+  margin: 10px;
+}
+
+.title, .overview, .release, .poster {
+ background: #262626;
+ height: 25px;
+ width: 200px;
+ color: white;
+ padding: 4px;
+ margin: 4px;
+ font-size: 15px;
 }
 
 .edit_movie {

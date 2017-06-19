@@ -69,38 +69,38 @@ class Movie extends Component {
       } else {
         console.log('currently editing')
         return  (
-          <li>
+          <ul>
             <form
             onSubmit={event => this.props.editMovie(event, this.props.movie.id)}
             className='edit'
             >
-              <input 
+              <input className='title'
                 type='text'
                 name='title'
                 value={this.state.titleValue}
                 onChange={(e) => {this.handleTitleInputChange(e)}}
               /><br/>
-              <input 
+              <input className='overview'
                 type='text'
                 name='overview'
                 value={this.state.overviewValue}
                 onChange={(e) => {this.handleOverviewInputChange(e)}}
               /><br/>
-              <input 
+              <input className='release'
                 type='text'
                 name='release_date'
                 value={this.state.release_dateValue}
                 onChange={(e) => {this.handleRelease_dateInputChange(e)}}
               /><br/>
-              <input 
+              <input className='poster'
                 type='text'
                 name='poster_path'
                 value={this.state.poster_pathValue}
                 onChange={(e) => {this.handlePoster_pathInputChange(e)}}
               /><br/>
-              <input type='submit' value='Edit movie!' />
+              <input type='submit' value='Edit movie!' className='edit_it'/>
             </form>
-          </li>
+          </ul>
         )
       }
     } else if (this.props.renderState === 'api') {
