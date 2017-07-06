@@ -14,7 +14,7 @@ class Movie extends Component {
     this.handleTitleInputChange = this.handleTitleInputChange.bind(this);
     this.handleOverviewInputChange = this.handleOverviewInputChange.bind(this);
     this.handleRelease_dateInputChange = this.handleRelease_dateInputChange.bind(this);
-    this. handlePoster_pathInputChange = this. handlePoster_pathInputChange.bind(this);
+    this.handlePoster_pathInputChange = this.handlePoster_pathInputChange.bind(this);
   }
 
   componentDidMount() {
@@ -59,7 +59,7 @@ class Movie extends Component {
             <p><span className='dbMovies'>Title:</span> {this.props.movie.title}</p>
             <p><span className='dbMovies'>Overview:</span> {this.props.movie.overview}</p>
             <p><span className='dbMovies'>Release date:</span> {this.props.movie.release_date}</p>
-            <img className='image' src={"https://image.tmdb.org/t/p/w500" + this.props.movie.poster_path} />
+            <img className='image' alt='movie poster' src={"https://image.tmdb.org/t/p/w500" + this.props.movie.poster_path} />
             <div className='e_d_buttons'>
               <button className='delete_movie' onClick={() => {this.props.deleteMovie(this.props.movie.id)}}>Delete Movie</button>
               <button className='edit_movie' onClick={this.handleEditMode}>Edit Movie</button>
@@ -109,7 +109,7 @@ class Movie extends Component {
             <p><span className='apiMovies'>Title:</span> {this.props.movie.title}</p>
             <p><span className='apiMovies'>Overview:</span> {this.props.movie.overview}</p>
             <p><span className='apiMovies'>Release date:</span> {this.props.movie.release_date}</p>
-            <img className='image' src={"https://image.tmdb.org/t/p/w500" + this.props.movie.poster_path} />
+            <img className='image' alt='movie poster' src={"https://image.tmdb.org/t/p/w500" + this.props.movie.poster_path} />
             <div className='e_d_buttons'>
               <button className='add_movie' onClick={(e) => {this.props.addMovie(e, this.props.movie)}}>Add Movie</button>
             </div>
